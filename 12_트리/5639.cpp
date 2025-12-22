@@ -4,7 +4,6 @@
 using namespace std;
 
 int pre[MAXN];
-int n = 0;
 
 void postOrder(int l, int r) {
   if (l >= r) { // 끝 조건
@@ -25,6 +24,8 @@ void postOrder(int l, int r) {
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(NULL);
+
+  int n = 0;
 
   while (cin >> pre[n]) {
     n++;
